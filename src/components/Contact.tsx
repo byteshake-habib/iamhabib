@@ -10,6 +10,7 @@ import {
     Linkedin,
     Twitter,
     Facebook,
+    Youtube,
 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -60,22 +61,22 @@ const Contact: React.FC = () => {
         {
             icon: Mail,
             label: 'Email',
-            value: 'hello@iamhabib.online',
-            link: 'mailto:hello@iamhabib.online',
+            value: 'habibur.tj@gmail.com',
+            link: 'mailto:habibur.tj@gmail.com',
             gradient: 'from-blue-500 to-cyan-500',
         },
         {
             icon: Phone,
             label: 'Phone',
-            value: '+880 1234-567890',
-            link: 'tel:+8801234567890',
+            value: '+880 01877666010',
+            link: 'tel:+88001877666010',
             gradient: 'from-green-500 to-emerald-500',
         },
         {
             icon: MapPin,
             label: 'Location',
             value: 'Dhaka, Bangladesh',
-            link: '#',
+            link: 'https://www.google.com/maps/search/Dhaka%20Bangladesh',
             gradient: 'from-purple-500 to-pink-500',
         },
     ];
@@ -84,25 +85,25 @@ const Contact: React.FC = () => {
         {
             icon: Github,
             label: 'GitHub',
-            link: 'https://github.com/habib',
+            link: 'https://github.com/habibnote',
             gradient: 'from-gray-700 to-gray-900',
         },
         {
             icon: Linkedin,
             label: 'LinkedIn',
-            link: 'https://linkedin.com/in/habib',
+            link: 'https://www.linkedin.com/in/habib333/',
             gradient: 'from-blue-600 to-blue-800',
         },
         {
-            icon: Twitter,
-            label: 'Twitter',
-            link: 'https://twitter.com/habib',
-            gradient: 'from-sky-400 to-sky-600',
+            icon: Youtube,
+            label: 'Youtube',
+            link: 'https://www.youtube.com/@LearnWith-Habib',
+            gradient: 'from-red-400 to-red-600',
         },
         {
             icon: Facebook,
             label: 'Facebook',
-            link: 'https://facebook.com/habib',
+            link: 'https://www.facebook.com/md.Habib333',
             gradient: 'from-blue-500 to-blue-700',
         },
     ];
