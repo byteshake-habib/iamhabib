@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
     });
 
     const skills = [
-        { name: 'PHP (OOP)', level: 95, color: 'from-blue-500 to-blue-600' },
+        { name: 'PHP (OOP)', level: 78, color: 'from-blue-500 to-blue-600' },
         {
             name: 'WordPress Development',
             level: 98,
@@ -19,8 +19,8 @@ const Skills: React.FC = () => {
         },
         { name: 'React.js', level: 90, color: 'from-cyan-500 to-cyan-600' },
         {
-            name: 'JavaScript/TypeScript',
-            level: 88,
+            name: 'JavaScript',
+            level: 65,
             color: 'from-yellow-500 to-yellow-600',
         },
         {
@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
         },
         {
             name: 'MySQL Database',
-            level: 85,
+            level: 60,
             color: 'from-orange-500 to-orange-600',
         },
         {
@@ -60,7 +60,7 @@ const Skills: React.FC = () => {
             title: 'Frontend Development',
             skills: [
                 'React.js',
-                'JavaScript/TypeScript',
+                'JavaScript',
                 'Tailwind CSS',
                 'Gutenberg Blocks',
             ],
