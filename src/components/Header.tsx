@@ -71,11 +71,19 @@ const Header: React.FC = () => {
                                     H
                                 </span>
                             </div>
-                            <div className="flex flex-col">
+                            <div className="hidden flex-col md:flex">
                                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                                     IamHabib
                                 </span>
                                 <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                                    WordPress Developer
+                                </span>
+                            </div>
+                            <div className="flex flex-col md:hidden">
+                                <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                    Habib
+                                </span>
+                                <span className="hidden sm:block text-xs text-gray-500 dark:text-gray-400 font-medium">
                                     WordPress Developer
                                 </span>
                             </div>

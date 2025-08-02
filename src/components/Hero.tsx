@@ -12,29 +12,25 @@ const Hero: React.FC = () => {
             ?.scrollIntoView({ behavior: 'smooth' });
     };
 
-    // Floating tech icons animation
     const techIcons = [Code, Zap, Cpu];
 
     return (
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+        <section className="min-h-[calc(100vh)] pt-[100px] pb-16 flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
             {/* Animated Tech Background */}
             <div className="absolute inset-0">
-                {/* Grid Pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(120,119,198,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(120,119,198,0.1)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 
-                {/* Animated Gradient Orbs */}
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-pink-500/30 to-orange-500/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
 
-                {/* Floating Tech Elements */}
                 {[...Array(15)].map((_, i) => (
                     <motion.div
                         key={i}
                         className="absolute"
                         style={{
                             left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
+                            top: `${20 + Math.random() * 60}%`,
                         }}
                         animate={{
                             y: [0, -30, 0],
@@ -60,14 +56,13 @@ const Hero: React.FC = () => {
                     </motion.div>
                 ))}
 
-                {/* Code-like floating elements */}
                 {[...Array(8)].map((_, i) => (
                     <motion.div
                         key={`code-${i}`}
                         className="absolute text-green-400/20 font-mono text-sm"
                         style={{
                             left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
+                            top: `${20 + Math.random() * 60}%`,
                         }}
                         animate={{
                             y: [0, -50, 0],
@@ -95,8 +90,7 @@ const Hero: React.FC = () => {
                 ))}
             </div>
 
-            <div className="container mx-auto px-4 text-center relative z-10">
-                {/* Animated Profile Badge */}
+            <div className="w-full max-w-[1200px] mx-auto px-4 text-center relative z-10">
                 <motion.div
                     initial={{ scale: 0, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -117,12 +111,10 @@ const Hero: React.FC = () => {
                                 </span>
                             </div>
                         </div>
-                        {/* Status indicator */}
                         <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-slate-900 animate-pulse"></div>
                     </div>
                 </motion.div>
 
-                {/* Main Name with Gradient Animation */}
                 <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -133,13 +125,11 @@ const Hero: React.FC = () => {
                         <span className="bg-gradient-to-r from-blue-400 via-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent animate-gradient bg-[length:400%_400%] drop-shadow-2xl">
                             HABIB
                         </span>
-                        {/* Glitch effect overlay */}
                         <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent opacity-0 animate-pulse">
                             HABIB
                         </span>
                     </h1>
 
-                    {/* Subtitle with typewriter effect */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -154,7 +144,6 @@ const Hero: React.FC = () => {
                     </motion.div>
                 </motion.div>
 
-                {/* Enhanced Tagline */}
                 <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -182,7 +171,6 @@ const Hero: React.FC = () => {
                     </div>
                 </motion.div>
 
-                {/* Tech Stack Badges */}
                 <motion.div
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -214,7 +202,6 @@ const Hero: React.FC = () => {
                     ))}
                 </motion.div>
 
-                {/* Enhanced CTA Buttons */}
                 <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -262,7 +249,6 @@ const Hero: React.FC = () => {
                     </motion.a>
                 </motion.div>
 
-                {/* Enhanced Scroll Indicator */}
                 <motion.div
                     animate={{ y: [0, 15, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
@@ -283,7 +269,6 @@ const Hero: React.FC = () => {
                 </motion.div>
             </div>
 
-            {/* Animated particles */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(50)].map((_, i) => (
                     <motion.div
