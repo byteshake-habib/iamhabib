@@ -62,10 +62,19 @@ const About: React.FC = () => {
                         className="relative"
                     >
                         <div className="relative group">
+                            {/* Glowing border effect */}
                             <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition duration-300"></div>
+
+                            {/* Main container with gradient border */}
                             <div className="relative w-full max-w-md mx-auto h-96 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl p-1">
-                                <div className="w-full h-full bg-gray-200 dark:bg-gray-800 rounded-2xl flex items-center justify-center text-6xl font-bold text-gray-700 dark:text-gray-300">
-                                    H
+                                {/* Inner container with background and centered content */}
+                                <div className="w-full h-full bg-gray-200 dark:bg-gray-800 rounded-2xl flex items-center justify-center overflow-hidden">
+                                    {/* Image */}
+                                    <img
+                                        src="/iamhabib.png"
+                                        alt="IamHabib"
+                                        className="object-contain w-full h-full rounded-2xl"
+                                    />
                                 </div>
                             </div>
                         </div>
