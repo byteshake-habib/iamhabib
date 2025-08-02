@@ -8,7 +8,6 @@ import {
     Send,
     Github,
     Linkedin,
-    Twitter,
     Facebook,
     Youtube,
 } from 'lucide-react';

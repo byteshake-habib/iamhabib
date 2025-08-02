@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Download, Mail, ArrowDown, Code, Zap, Cpu } from 'lucide-react';
+import { Download, Mail, Code, Zap, Cpu } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero: React.FC = () => {
@@ -148,7 +148,7 @@ const Hero: React.FC = () => {
                     >
                         <span className="text-green-400 font-mono">&lt;</span>
                         <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                            WordPress Expert
+                            WordPress Developer
                         </span>
                         <span className="text-green-400 font-mono">/&gt;</span>
                     </motion.div>
@@ -193,8 +193,9 @@ const Hero: React.FC = () => {
                         'PHP',
                         'WordPress',
                         'React',
-                        'TypeScript',
+                        'JavaScript',
                         'Tailwind',
+                        'APIs',
                     ].map((tech, index) => (
                         <motion.span
                             key={tech}
