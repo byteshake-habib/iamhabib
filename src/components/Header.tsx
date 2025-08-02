@@ -73,7 +73,7 @@ const Header: React.FC = () => {
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                                    Habib
+                                    IamHabib
                                 </span>
                                 <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
                                     WordPress Developer
