@@ -50,43 +50,6 @@ const Portfolio: React.FC = () => {
             stats: { downloads: '2.5K+', rating: 5, activeInstalls: '0.5k+' },
             gradient: 'from-green-500 to-emerald-500',
         },
-        {
-            id: 4,
-            title: 'Custom Theme Framework',
-            description:
-                'Modular WordPress theme framework with Gutenberg integration',
-            image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-            category: 'theme',
-            technologies: ['PHP', 'WordPress', 'Gutenberg', 'SCSS'],
-            link: '#',
-            github: '#',
-            stats: { downloads: '1K+', rating: 4.6, activeInstalls: '0.1K+' },
-            gradient: 'from-orange-500 to-red-500',
-        },
-        {
-            id: 5,
-            title: 'React Dashboard',
-            description: 'Modern admin dashboard with real-time analytics',
-            image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
-            category: 'web-app',
-            technologies: ['React', 'Tailwind', 'Chart.js'],
-            link: '#',
-            github: '#',
-            stats: { downloads: '1K+', rating: 4.9, activeInstalls: '1K+' },
-            gradient: 'from-indigo-500 to-blue-500',
-        },
-        {
-            id: 6,
-            title: 'API Integration',
-            description: 'WordPress plugin for third-party API integrations',
-            image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600',
-            category: 'plugin',
-            technologies: ['PHP', 'REST API', 'OAuth', 'Webhooks'],
-            link: '#',
-            github: '#',
-            stats: { downloads: '0.1K+', rating: 4.8, activeInstalls: '0.1K+' },
-            gradient: 'from-teal-500 to-green-500',
-        },
     ];
 
     const categories = [
@@ -210,7 +173,7 @@ const Portfolio: React.FC = () => {
                                             >
                                                 <ExternalLink size={20} />
                                             </motion.a>
-                                            <motion.a
+                                            {/* <motion.a
                                                 whileHover={{ scale: 1.1 }}
                                                 whileTap={{ scale: 0.9 }}
                                                 href={project.github}
@@ -219,7 +182,7 @@ const Portfolio: React.FC = () => {
                                                 className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
                                             >
                                                 <Github size={20} />
-                                            </motion.a>
+                                            </motion.a> */}
                                         </div>
                                     </div>
                                 </div>
