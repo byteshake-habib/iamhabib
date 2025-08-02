@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Star, Download, Users } from 'lucide-react';
+import { ExternalLink, Star, Download, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Portfolio: React.FC = () => {
