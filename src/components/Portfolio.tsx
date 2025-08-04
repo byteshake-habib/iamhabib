@@ -40,7 +40,7 @@ const Portfolio: React.FC = () => {
         },
         {
             id: 3,
-            title: t('easycommerce'),
+            title: t('EasyCommerce'),
             description: t('easycommerceDesc'),
             image: 'https://ps.w.org/easycommerce/assets/banner-772x250.png?rev=3243666',
             category: 'contribution',

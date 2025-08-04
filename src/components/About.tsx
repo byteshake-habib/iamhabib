@@ -71,7 +71,8 @@ const About: React.FC = () => {
                                 <div className="w-full h-full bg-gray-200 dark:bg-gray-800 rounded-2xl flex items-center justify-center overflow-hidden">
                                     {/* Image */}
                                     <img
-                                        src="/iamhabib.png"
+                                        // src="/iamhabib.png"
+                                        src="/habib.jpg"
                                         alt="IamHabib"
                                         className="object-contain w-full h-full rounded-2xl"
                                     />
